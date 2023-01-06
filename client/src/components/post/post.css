@@ -1,0 +1,72 @@
+.post{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 3px 10px 24px -8px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow:0px 0px 16px -8px rgba(0,0,0,0.75);
+    margin: 30px 0;
+}
+.postWrapper{
+    padding: 20px;
+}
+.postTopLeft{
+    display: flex;
+    align-items: center;
+}
+.postTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.postProfilePicture{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.postUserName{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 10px;
+}
+.postTime{
+    font-size: 12px;
+}
+.postCenter{
+    margin: 20px 0;
+    
+}
+.postImage{
+    margin-top: 20px;
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+}
+.postBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.postBottomLeft{
+    display: flex;
+    align-items: center;
+}
+.likejdrIcond{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 5px;
+}
+.postLikCount{
+    font-size: 15px;
+}
+.postComentText{
+    font-size: 15px;
+    cursor: pointer;
+    border-bottom: 1px;
+}
+.postText{
+    margin: 10px 0;
+}
