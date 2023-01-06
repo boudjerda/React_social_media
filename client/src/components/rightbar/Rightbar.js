@@ -23,7 +23,7 @@ export default function Rightbar() {
                 <img src='/assets/person/person2.jpg' alt='' className='rightbarProfileImage'/>
                 <span className='rightbarEnligne'></span>
               </div>
-              <span className='rightbarUsers'>djamel boudj</span>
+              <span className='rightbarUsers'>djamel boudjerda</span>
             </li>
             <li className='rightbarFriend'>
               <div className='rightbarProfileImageContainer'>
