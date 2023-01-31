@@ -1,4 +1,5 @@
 import  './sidebar.css';
+import { users} from '../../data';
 import {RssFeed, Bookmark, HelpOutline,WorkOutline,Event, School} from "@mui/icons-material"
 export default function Sidebar() {
   return (
@@ -35,47 +36,19 @@ export default function Sidebar() {
             </button>
             <hr className='sidebarHr'/>
             <ul className='sidebarFriendList'>
-                <li className='sidebarFriend'>
-                    <img className='sidebarFrienImg' src='/assets/person/person1.jpg' alt=''></img>
-                    <span className='sidebarFrienName'>amine</span>
+              {
+                users.map((u)=>{
+                  return (
+                    <li className='sidebarFriend' key={u.id}>
+                    <img className='sidebarFrienImg' src={u.profilePicture} alt=''></img>
+                    <span className='sidebarFrienName'>{u.userName}</span>
                 </li>
-                <li className='sidebarFriend'>
-                    <img className='sidebarFrienImg' src='/assets/person/person1.jpg' alt=''></img>
-                    <span className='sidebarFrienName'>amine</span>
-                </li>
-                <li className='sidebarFriend'>
-                    <img className='sidebarFrienImg' src='/assets/person/person1.jpg' alt=''></img>
-                    <span className='sidebarFrienName'>amine</span>
-                </li>
-                <li className='sidebarFriend'>
-                    <img className='sidebarFrienImg' src='/assets/person/person1.jpg' alt=''></img>
-                    <span className='sidebarFrienName'>amine</span>
-                </li>
-                <li className='sidebarFriend'>
-                    <img className='sidebarFrienImg' src='/assets/person/person1.jpg' alt=''></img>
-                    <span className='sidebarFrienName'>amine</span>
-                </li>
-                <li className='sidebarFriend'>
-                    <img className='sidebarFrienImg' src='/assets/person/person1.jpg' alt=''></img>
-                    <span className='sidebarFrienName'>amine</span>
-                </li>
-                <li className='sidebarFriend'>
-                    <img className='sidebarFrienImg' src='/assets/person/person1.jpg' alt=''></img>
-                    <span className='sidebarFrienName'>amine</span>
-                </li>
-                <li className='sidebarFriend'>
-                    <img className='sidebarFrienImg' src='/assets/person/person1.jpg' alt=''></img>
-                    <span className='sidebarFrienName'>amine</span>
-                </li>
-                
-                <li className='sidebarFriend'>
-                    <img className='sidebarFrienImg' src='/assets/person/person1.jpg' alt=''></img>
-                    <span className='sidebarFrienName'>amine</span>
-                </li>
-                <li className='sidebarFriend'>
-                    <img className='sidebarFrienImg' src='/assets/person/person1.jpg' alt=''></img>
-                    <span className='sidebarFrienName'>amine</span>
-                </li>
+                  )
+                })
+              }
+
+               
+               
             </ul>
         </div>
     </div>

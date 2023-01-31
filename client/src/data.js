@@ -20,11 +20,22 @@ export const users = [
         userName:"Amira mira"
     }
 ]
-export const post =[
+export const posts =[
     {
         id:1,
-        desc:"hey how are you ?",
-        photo:"",
-        dhate:,
+        photo:"/assets/post/birthday.jpg",
+        date:"20 min ago",
+        userId:1,
+        like:9,
+        comment:30
+    },
+    {
+        id:2,
+        desc:"it's my birthday <3 ",
+        photo:"/assets/post/birthday.jpg",
+        date:"30 min ago",
+        userId:2,
+        like:9,
+        comment:30
     }
 ]
